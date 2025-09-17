@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Krishsetu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Krishsetu Logo">
+                <h1>Krishsetu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="disease.html">Market Prices</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Contact Krishsetu</h2>
+            <p>We're here to help you with all your farming queries and concerns</p>
+        </div>
+    </section>
+
+    <section class="contact-options">
+        <div class="container">
+            <div class="options-grid">
+                <div class="option-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our agricultural experts</p>
+                    <p class="contact-detail">+91 1800 123 4567</p>
+                    <p class="timing">Monday-Saturday, 9AM-6PM</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us your queries and we'll respond within 24 hours</p>
+                    <p class="contact-detail">support@krishsetu.com</p>
+                    <p class="timing">24/7 Support</p>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time</p>
+                    <p class="contact-detail">Available 9AM-9PM</p>
+                    <button class="btn btn-small">Start Chat</button>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>Meet us at our regional offices</p>
+                    <p class="contact-detail">Agriculture House, Chandigarh</p>
+                    <button class="btn btn-small">View Map</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state" required>
+                            <option value="">Select your state</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="haryana">Haryana</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="uk">Uttarakhand</option>
+                            <option value="hp">Himachal Pradesh</option>
+                            <option value="rajasthan">Rajasthan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">District</label>
+                        <select id="district" name="district" required>
+                            <option value="">Select your district</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="query-type">Query Type</label>
+                        <select id="query-type" name="query-type" required>
+                            <option value="">Select query type</option>
+                            <option value="weather">Weather Related</option>
+                            <option value="prices">Market Prices</option>
+                            <option value="techniques">Farming Techniques</option>
+                            <option value="account">Account Issues</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Regional Offices</h3>
+                <div class="office-card">
+                    <h4>Punjab Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Agricultural Complex, Ludhiana, Punjab</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 161 2345678</p>
+                </div>
+                <div class="office-card">
+                    <h4>Haryana Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Krishi Bhawan, Karnal, Haryana</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 184 2345678</p>
+                </div>
+                <div class="office-card">
+                    <h4>Uttar Pradesh Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Agriculture Center, Lucknow, UP</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 522 2345678</p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I get weather alerts for my area?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can subscribe to weather alerts by selecting your district on the Weather page and clicking the "Subscribe to Alerts" button. You'll need to provide your mobile number to receive SMS alerts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often are the market prices updated?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our market prices are updated daily from official mandi sources. During peak harvest seasons, some prices may be updated multiple times a day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a cost to use Krishsetu services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All basic services on Krishsetu are completely free for farmers. Some premium services like personalized expert consultations may have nominal charges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I get information in my regional language?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Krishsetu is available in Hindi, Punjabi, and English. You can change the language from the settings menu at the top of the page.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I report incorrect information on the website?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please use the "Report Error" option available on each information card or contact our support team with details of the incorrect information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="Krishsetu Logo">
+                        <h3>Krishsetu</h3>
+                    </div>
+                    <p>Bridging the gap between traditional farming and modern technology for North Indian farmers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="disease.html">Market Prices</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Complaints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone-alt"></i> +91 1800 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> support@krishsetu.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Agriculture House, Chandigarh, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Krishsetu. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

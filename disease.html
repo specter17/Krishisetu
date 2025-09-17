@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection | Krishsetu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="disease.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Krishsetu Logo">
+                <h1>Krishsetu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="disease.html" class="active">Disease Detection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="disease-hero">
+        <div class="container">
+            <h2>Crop Disease Detection</h2>
+            <p>Upload images of your crops to detect diseases and get treatment recommendations</p>
+        </div>
+    </section>
+
+    <section class="disease-detection">
+        <div class="container">
+            <div class="detection-container">
+                <div class="upload-section">
+                    <div class="upload-box" id="upload-box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>Upload Crop Image</h3>
+                        <p>Drag & drop image here or click to browse</p>
+                        <input type="file" id="image-upload" accept="image/*">
+                    </div>
+                    <div class="crop-selector">
+                        <label for="crop-type">Select Crop Type:</label>
+                        <select id="crop-type">
+                            <option value="">Auto Detect</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="rice">Rice</option>
+                            <option value="corn">Corn/Maize</option>
+                            <option value="cotton">Cotton</option>
+                            <option value="potato">Potato</option>
+                            <option value="tomato">Tomato</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button id="analyze-btn" class="btn" disabled>Analyze Image</button>
+                </div>
+
+                <div class="result-section">
+                    <div class="result-placeholder" id="result-placeholder">
+                        <i class="fas fa-leaf"></i>
+                        <p>Analysis results will appear here</p>
+                    </div>
+                    <div class="result-content" id="result-content" style="display: none;">
+                        <h3>Detection Results</h3>
+                        <div class="result-grid">
+                            <div class="image-preview">
+                                <img id="preview-image" src="#" alt="Uploaded Image">
+                            </div>
+                            <div class="result-details">
+                                <div class="disease-info">
+                                    <h4 id="disease-name">Disease Name</h4>
+                                    <p id="disease-confidence">Confidence: 95%</p>
+                                    <p id="crop-type-result">Crop: Wheat</p>
+                                </div>
+                                <div class="symptoms">
+                                    <h5>Symptoms:</h5>
+                                    <p id="disease-symptoms">Yellowing of leaves, brown spots, stunted growth</p>
+                                </div>
+                                <div class="treatment">
+                                    <h5>Recommended Treatment:</h5>
+                                    <ul id="treatment-list">
+                                        <li>Apply fungicide X every 7 days</li>
+                                        <li>Remove and destroy infected plants</li>
+                                        <li>Improve air circulation</li>
+                                    </ul>
+                                </div>
+                                <div class="prevention">
+                                    <h5>Prevention Tips:</h5>
+                                    <ul id="prevention-list">
+                                        <li>Use disease-resistant varieties</li>
+                                        <li>Practice crop rotation</li>
+                                        <li>Avoid overhead watering</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="common-diseases">
+        <div class="container">
+            <h2>Common Crop Diseases</h2>
+            <div class="disease-grid">
+                <div class="disease-card">
+                    <img src="images/wheat-rust.jpg" alt="Wheat Rust">
+                    <h3>Wheat Rust</h3>
+                    <p>Fungal disease causing reddish-brown pustules on leaves and stems.</p>
+                    <button class="btn btn-small">Learn More</button>
+                </div>
+                <div class="disease-card">
+                    <img src="images/rice-blast.jpg" alt="Rice Blast">
+                    <h3>Rice Blast</h3>
+                    <p>Fungal disease causing diamond-shaped lesions with gray centers.</p>
+                    <button class="btn btn-small">Learn More</button>
+                </div>
+                <div class="disease-card">
+                    <img src="images/potato-blight.jpg" alt="Potato Blight">
+                    <h3>Potato Late Blight</h3>
+                    <p>Water-soaked lesions that turn brown and spread rapidly in wet conditions.</p>
+                    <button class="btn btn-small">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="Krishsetu Logo">
+                        <h3>Krishsetu</h3>
+                    </div>
+                    <p>Bridging the gap between traditional farming and modern technology for North Indian farmers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="disease.html">Disease Detection</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone-alt"></i> +91 1800 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> support@krishsetu.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Agriculture House, Chandigarh, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Krishsetu. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="disease.js"></script>
+</body>
+</html>

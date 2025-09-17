@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast | Krishsetu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Krishsetu Logo">
+                <h1>Krishsetu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="weather.html" class="active">Weather</a></li>
+                    
+                    <li><a href="disease.html">Disease detection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="weather-hero">
+        <div class="container">
+            <h2>North India Weather Forecast</h2>
+            <p>Get accurate weather information for your region to plan your farming activities effectively.</p>
+        </div>
+    </section>
+
+    <section class="weather-search">
+        <div class="container">
+            <div class="search-box">
+                <select id="state-select">
+                    <option value="">Select State</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="uk">Uttarakhand</option>
+                    <option value="hp">Himachal Pradesh</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Assam">Assam </option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="chhattisgrah">chhattisgarh</option>
+                    <option value="jharkand">jharkand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerela">Kerela</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    
+                </select>
+                <select id="district-select" disabled>
+                    <option value="">Select District</option>
+                </select>
+                <button id="search-weather" class="btn">Get Weather</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="current-weather">
+        <div class="container">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <h3 id="location">Select a location</h3>
+                    <p id="date"></p>
+                </div>
+                <div class="weather-main">
+                    <div class="weather-icon">
+                        <i class="fas fa-sun" id="weather-icon"></i>
+                        <p id="weather-desc">Sunny</p>
+                    </div>
+                    <div class="weather-temp">
+                        <h1 id="current-temp">--</h1>
+                        <span>°C</span>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <i class="fas fa-temperature-high"></i>
+                            <div>
+                                <p>High</p>
+                                <p id="high-temp">--°</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-temperature-low"></i>
+                            <div>
+                                <p>Low</p>
+                                <p id="low-temp">--°</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <p>Humidity</p>
+                                <p id="humidity">--%</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <p>Wind</p>
+                                <p id="wind">-- km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forecast">
+        <div class="container">
+            <h2>7-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container">
+                <div class="forecast-card">
+                    <p class="day">Monday</p>
+                    <i class="fas fa-sun"></i>
+                    <div class="temps">
+                        <span class="high">32°</span>
+                        <span class="low">22°</span>
+                    </div>
+                </div>
+                <!-- More forecast cards will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="weather-alerts">
+        <div class="container">
+            <h2>Weather Alerts</h2>
+            <div class="alert-card warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="alert-content">
+                    <h3>Heat Wave Alert</h3>
+                    <p>Punjab and Haryana are expected to experience heat wave conditions in the next 3 days with temperatures reaching 45°C. Farmers are advised to irrigate fields in the evening to prevent water loss.</p>
+                    <p class="alert-date">Issued: May 15, 2023 | Valid until: May 18, 2023</p>
+                </div>
+            </div>
+            <div class="alert-card info">
+                <i class="fas fa-info-circle"></i>
+                <div class="alert-content">
+                    <h3>Rainfall Prediction</h3>
+                    <p>Light to moderate rainfall expected in Western Uttar Pradesh and Uttarakhand in the next 48 hours. Suitable time for sowing of Kharif crops.</p>
+                    <p class="alert-date">Issued: May 14, 2023 | Valid until: May 16, 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="farming-recommendations">
+        <div class="container">
+            <h2>Farming Recommendations Based on Weather</h2>
+            <div class="recommendation-card">
+                <h3>Current Weather Conditions</h3>
+                <p id="current-conditions">Select a location to get farming recommendations based on current weather.</p>
+                <div class="recommendation-list" id="recommendations">
+                    <!-- Recommendations will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo-white.png" alt="Krishsetu Logo">
+                        <h3>Krishsetu</h3>
+                    </div>
+                    <p>Bridging the gap between traditional farming and modern technology for North Indian farmers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        
+                        <li><a href="disease.html">Disease detection</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Complaints</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone-alt"></i> +91 1800 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> support@krishsetu.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Agriculture House, Chandigarh, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Krishsetu. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
